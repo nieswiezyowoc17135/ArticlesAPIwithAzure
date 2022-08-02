@@ -1,6 +1,7 @@
 ﻿using ArticlesAPI.Data;
 using ArticlesAPI.Entities;
 using ArticlesAPI.Models;
+using Azure.Storage.Blobs;
 using Microsoft.EntityFrameworkCore;
 
 namespace ArticlesAPI.Services
@@ -21,7 +22,18 @@ namespace ArticlesAPI.Services
             var newArticle = new Article();
             newArticle.Title = article.Title;
             newArticle.Description = article.Description;
-            newArticle.ImageURL = article.ImageURL;
+            newArticle.ImageURL = article.File.FileName;
+
+            //dodawanie image do storage accounta
+            var blobStorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=psarticle;AccountKey=5vkxEfcI2YJEWi9HrIeP+lJZCOA48uEWz1eV9/bRPfASocHHfbcyb7h/hcLN6cCVfw9rI8AKm+xU+AStmyFYCg==;EndpointSuffix=core.windows.net";
+            var blobStorageContainername = "files";
+
+            var container = new BlobContainerClient(blobStorageConnectionString, blobStorageContainername);
+            var blob = container.GetBlobClient(article.File.FileName);
+            
+            var stream = article.File.OpenReadStream();
+            await blob.UploadAsync(stream);
+
             _context.Articles.Add(newArticle);
             await _context.SaveChangesAsync();
             return true;

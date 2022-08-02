@@ -4,6 +4,9 @@ C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubT
 C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubTmp\Out\ArticlesAPI.dll
 C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubTmp\Out\ArticlesAPI.runtimeconfig.json
 C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubTmp\Out\ArticlesAPI.pdb
+C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubTmp\Out\Azure.Core.dll
+C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubTmp\Out\Azure.Storage.Blobs.dll
+C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubTmp\Out\Azure.Storage.Common.dll
 C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubTmp\Out\Humanizer.dll
 C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubTmp\Out\MessagePack.dll
 C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubTmp\Out\MessagePack.Annotations.dll
@@ -69,6 +72,8 @@ C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubT
 C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubTmp\Out\System.Configuration.ConfigurationManager.dll
 C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubTmp\Out\System.Drawing.Common.dll
 C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubTmp\Out\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubTmp\Out\System.IO.Hashing.dll
+C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubTmp\Out\System.Memory.Data.dll
 C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubTmp\Out\System.Runtime.Caching.dll
 C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubTmp\Out\System.Security.Cryptography.ProtectedData.dll
 C:\Users\pswider\Desktop\project\ArticlesAPI\ArticlesAPI\obj\Release\net6.0\PubTmp\Out\System.Security.Permissions.dll

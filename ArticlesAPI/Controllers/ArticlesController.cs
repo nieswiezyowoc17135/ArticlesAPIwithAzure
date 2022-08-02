@@ -55,7 +55,7 @@ namespace ArticlesAPI.Controllers
         // POST: api/Articles
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<bool>> PostArticle(AddArticleDto article)
+        public async Task<ActionResult<bool>> PostArticle([FromForm]AddArticleDto article)
         {
 
             if (await _articleService.AddArticle(article))
