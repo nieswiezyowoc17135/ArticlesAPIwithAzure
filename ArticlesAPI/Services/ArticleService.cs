@@ -33,6 +33,7 @@ namespace ArticlesAPI.Services
             
             var stream = article.File.OpenReadStream();
             await blob.UploadAsync(stream);
+            ///////////////blob////////////////
 
             _context.Articles.Add(newArticle);
             await _context.SaveChangesAsync();
@@ -55,6 +56,14 @@ namespace ArticlesAPI.Services
             }
 
             _context.Articles.Remove(article);
+
+            //usuwanie image do storage accounta
+            var blobStorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=psarticle;AccountKey=5vkxEfcI2YJEWi9HrIeP+lJZCOA48uEWz1eV9/bRPfASocHHfbcyb7h/hcLN6cCVfw9rI8AKm+xU+AStmyFYCg==;EndpointSuffix=core.windows.net";
+            var blobStorageContainername = "files";
+
+            var container = new BlobContainerClient(blobStorageConnectionString, blobStorageContainername);
+            var blob = container.GetBlobClient(article.ImageURL);
+            await blob.DeleteAsync();
 
             if (await _context.SaveChangesAsync() == 1)
             {
