@@ -40,7 +40,7 @@ namespace ArticlesAPI.Controllers
         // PUT: api/Articles/
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut]
-        public async Task<ActionResult<bool>> PutArticle(string title, EditArticleDtoIn article)
+        public async Task<ActionResult<bool>> PutArticle(string title, [FromForm]EditArticleDtoIn article)
         {
             if (await _articleService.EditArticle(title, article))
             {
