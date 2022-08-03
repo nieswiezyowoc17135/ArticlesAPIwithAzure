@@ -153,7 +153,8 @@ namespace ArticlesAPI.Services
                 BlobContainerName = container.Name,
                 Resource = "b",
                 StartsOn = DateTimeOffset.UtcNow,
-                ExpiresOn = DateTimeOffset.UtcNow.AddSeconds(20),
+                ExpiresOn = DateTimeOffset.UtcNow.AddSeconds(5),
+                BlobName = _article.ImageURL
             };
 
             sasBuilder.SetPermissions(BlobSasPermissions.Read);
